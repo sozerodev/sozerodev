@@ -14,6 +14,11 @@
 - ⛰ Heliosen, Web3D Team (2020.10 ~ 2023.04)
 - 🎓 KyungHee University, Geography (Bachelor of Science) (2020.08)
 
+### Stack
+- Javascript along with Node, React, Vue
+- Python along with Flask and creating automated data processing pipelines 
+- Java along with Spring
+
 ### What I'm interested in
 - Problem Solving Skills
 - Node along with Typescript
