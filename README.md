@@ -10,7 +10,7 @@
 - 🏙 I live in Seoul
 
 ### Experience
-- 📚 Korea Open National University, Computer Science (in progress)
+- QuantifiedESG, [ESG Reporting Tool](https://report.qesg.co.kr) (2023.05 ~ )
 - ⛰ Heliosen, Web3D Team (2020.10 ~ 2023.04)
 - 🎓 KyungHee University, Geography (Bachelor of Science) (2020.08)
 
