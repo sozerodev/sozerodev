@@ -1,0 +1,102 @@
+name: 🐛 Bug Report
+description: 버그 리포트를 작성해주세요
+title: "[BUG] "
+# labels 옵션들:
+# 기본 제공: "bug", "enhancement", "documentation", "duplicate", "good first issue", 
+#            "help wanted", "invalid", "question", "wontfix"
+# 우선순위: "priority: high", "priority: medium", "priority: low", "critical"
+# 타입: "type: feature", "type: bug", "type: hotfix", "type: chore", "type: refactor"
+# 상태: "status: in progress", "status: blocked", "status: ready", "status: reviewing"
+# 영역: "area: frontend", "area: backend", "area: api", "area: database", "area: ui/ux"
+# 난이도: "difficulty: easy", "difficulty: medium", "difficulty: hard"
+# 플랫폼: "platform: web", "platform: mobile", "platform: ios", "platform: android"
+# 사용자정의: "needs-review", "breaking-change", "security", "performance"
+labels: ["bug"]
+assignees: []
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 🐛 버그 설명
+      description: 어떤 버그가 발생했는지 명확하게 설명해주세요.
+      placeholder: 버그에 대한 상세한 설명을 작성해주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 🔄 재현 방법
+      description: 버그를 재현할 수 있는 단계를 작성해주세요.
+      placeholder: |
+        1. '...' 페이지로 이동
+        2. '...' 버튼 클릭
+        3. '...' 입력
+        4. 오류 발생
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: ✅ 예상 동작
+      description: 어떤 동작을 기대했는지 설명해주세요.
+      placeholder: 정상적으로 동작해야 하는 방식을 설명해주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: ❌ 실제 동작
+      description: 실제로 어떤 일이 일어났는지 설명해주세요.
+      placeholder: 실제로 발생한 문제를 설명해주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 🌐 환경 정보
+      description: 버그가 발생한 환경 정보를 제공해주세요.
+      placeholder: |
+        - OS: [예: Windows 11, macOS 13, Ubuntu 22.04]
+        - 브라우저: [예: Chrome 119, Firefox 119, Safari 17]
+        - Node.js 버전: [예: v18.18.0]
+        - 앱 버전: [예: v1.2.3]
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 📸 스크린샷/로그
+      description: 관련 스크린샷이나 에러 로그를 첨부해주세요.
+      placeholder: 스크린샷을 드래그 앤 드롭하거나 에러 로그를 붙여넣어주세요.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🔥 우선순위
+      description: 이 버그의 우선순위는 어떻게 생각하시나요?
+      options:
+        - Low (낮음)
+        - Medium (보통)
+        - High (높음)
+        - Critical (치명적)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: ✔️ 체크리스트
+      description: 아래 사항들을 확인해주세요.
+      options:
+        - label: 중복된 이슈가 없는지 확인했습니다.
+          required: true
+        - label: 최신 버전에서도 동일한 문제가 발생하는지 확인했습니다.
+          required: true

@@ -1,0 +1,108 @@
+name: ✨ Feature Request
+description: 새로운 기능을 제안해주세요
+title: "[FEATURE] "
+# labels 옵션들:
+# 기본 제공: "bug", "enhancement", "documentation", "duplicate", "good first issue", 
+#            "help wanted", "invalid", "question", "wontfix"
+# 우선순위: "priority: high", "priority: medium", "priority: low", "critical"
+# 타입: "type: feature", "type: bug", "type: hotfix", "type: chore", "type: refactor"
+# 상태: "status: in progress", "status: blocked", "status: ready", "status: reviewing"
+# 영역: "area: frontend", "area: backend", "area: api", "area: database", "area: ui/ux"
+# 난이도: "difficulty: easy", "difficulty: medium", "difficulty: hard"
+# 플랫폼: "platform: web", "platform: mobile", "platform: ios", "platform: android"
+# 사용자정의: "needs-review", "breaking-change", "security", "performance"
+labels: ["enhancement"]
+assignees: []
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 📝 기능 요약
+      description: 제안하고 싶은 기능을 간단히 요약해주세요.
+      placeholder: 한 줄로 기능을 요약해주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 🤔 해결하려는 문제
+      description: 이 기능이 어떤 문제를 해결하나요?
+      placeholder: |
+        현재 어떤 불편함이나 문제가 있어서 이 기능이 필요한지 설명해주세요.
+        예: "사용자가 ~할 때 ~한 어려움이 있습니다."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: 💡 제안하는 해결책
+      description: 어떤 방식으로 이 문제를 해결하고 싶으신가요?
+      placeholder: |
+        구체적인 해결 방안을 설명해주세요.
+        - 어떤 기능이 추가되어야 하는지
+        - 사용자가 어떻게 이용하게 될지
+        - UI/UX는 어떻게 구성될지
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 🔄 대안책
+      description: 고려해본 다른 해결 방법이 있나요?
+      placeholder: |
+        다른 방법들을 고려해봤다면 설명해주세요.
+        왜 제안하신 방법이 더 좋다고 생각하시나요?
+    validations:
+      required: false
+
+  - type: textarea
+    id: mockup
+    attributes:
+      label: 🎨 목업/예시
+      description: 화면 설계나 사용 예시가 있다면 첨부해주세요.
+      placeholder: |
+        - 스크린샷이나 목업 이미지
+        - 사용 시나리오 예시
+        - API 요청/응답 예시 등
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🔥 우선순위
+      description: 이 기능의 중요도는 어떻게 생각하시나요?
+      options:
+        - Low (낮음)
+        - Medium (보통)
+        - High (높음)
+        - Critical (치명적)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: 🎯 예상 구현 난이도
+      description: 이 기능의 구현 난이도를 어떻게 예상하시나요?
+      options:
+        - Easy (쉬움)
+        - Medium (보통)
+        - Hard (어려움)
+        - Very Hard (매우 어려움)
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: ✔️ 체크리스트
+      description: 아래 사항들을 확인해주세요.
+      options:
+        - label: 비슷한 기능 요청이 없는지 확인했습니다.
+          required: true
+        - label: 이 기능이 프로젝트의 목적과 일치한다고 생각합니다.
+          required: true
